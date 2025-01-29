@@ -8,7 +8,8 @@ Repositório em construção. Neste readme em breve estará disponível:
 - Exemplos do que será encontrado aqui
 
 ## Próximos passos
-- Concluir curry
 - Concluir custom template string
+- Iniciar tópico de closures
+- Iniciar tópico de higher-order functions
 - Elencar quais serão os próximos tópicos que escreverei sobre
   - A validar: proxy, elementos do navegador, reflect API, Symbols
