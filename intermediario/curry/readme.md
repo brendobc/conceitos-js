@@ -7,7 +7,7 @@ Uma das dúvidas que podem vir a surgir a partir daqui é: "a gente apenas chama
 
 ## Aplicação de função
 
-Por baixo dos panos, funções são apenas objetos que possuem métodos. Desses métodos, aqui veremos dois com um pouco de profundidade: `apply` e `call`, que são utilizados para chamar uma função de forma indireta como se fosse um método de um objeto. O primeiro argumento a ser passado em ambos é o objeto que servirá de contexto durante a execução da função (_this_). O segundo argumento de `apply` é um array com os argumentos que serão passados para a função sendo aplicada; já `call` recebe os argumentos sem a necessidade estarem em um array. No código a seguir, os comportamentos para as três chamadas da função produzem o mesmo resultado:
+Por baixo dos panos, funções são apenas objetos que possuem métodos. Desses métodos, aqui veremos dois com um pouco de profundidade: `apply` e `call`, que são utilizados para chamar uma função de forma indireta como se fosse um método de um objeto. O primeiro argumento a ser passado em ambos é o objeto que servirá de contexto durante a execução da função (_this_). O segundo argumento de `apply` é um array com os argumentos que serão passados para a função sendo aplicada; já `call` recebe os argumentos sem a necessidade de estarem em um array. No código a seguir, os comportamentos para as três chamadas da função produzem o mesmo resultado:
 
 ```
 function soma(arg1, arg2) {
@@ -34,7 +34,7 @@ somaX.call({x: 4}, 2);      // 6
 
 ## Aplicação parcial de funções
 
-Este termo refere-se ao ato de vincular argumentos a uma função para que em suas próximas aplicações um ou mais argumentos sejam omitidos. Ou seja, tais argumentos ainda serão passados para a função parcial, mas não de forma direta ao aplica-la. Para isso, cria-se uma _closure_ cujo escopo léxico contenha os argumentos que serão vinculados à função parcial. Aqui está um exemplo de como isso pode ser feito usando a função `soma` declarada mais acima:
+Este termo refere-se ao ato de vincular argumentos a uma função para que em suas próximas aplicações um ou mais argumentos sejam omitidos. Ou seja, tais argumentos ainda serão passados para a função parcial, mas não de forma direta ao aplicá-la. Para isso, cria-se uma _closure_ cujo escopo léxico contenha os argumentos que serão vinculados à função parcial. Aqui está um exemplo de como isso pode ser feito usando a função `soma` declarada mais acima:
 
 ```
 function criaFuncaoParcial(fn, ...argsExternos) {
@@ -62,7 +62,7 @@ Embora essa função possa facilmente existir numa pasta _utils_ em algum projet
 
 ## Function.prototype.bind
 
-O `bind` pode ser utilizado para dois propósitos:
+A função `bind` pode ser utilizada para dois propósitos:
 
 1. O objetivo principal é vincular uma função a um objeto, para que o contexto (_this_) tenha sempre o valor previamente definido quando a função for executada. Ou seja, ao invocar `bind`, uma nova função é criada, e o primeiro argumento passado nessa invocação se tornará o objeto ao qual a nova função será vinculada. Na prática, toda invocação dessa nova função será como se ela tivesse sido chamada como um método do objeto passado no bind.
 
