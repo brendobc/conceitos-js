@@ -1,0 +1,16 @@
+{
+    "name": "curry",
+    "version": "1.0.0",
+    "description": "Tecnica de currying",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "author": "",
+    "license": "ISC",
+    "type": "module",
+    "devDependencies": {
+        "@babel/plugin-transform-modules-commonjs": "^7.26.3",
+        "jest": "29.7.0"
+    }
+}
