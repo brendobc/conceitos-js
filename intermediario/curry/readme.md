@@ -34,7 +34,7 @@ somaX.call({x: 4}, 2);      // 6
 
 ## Aplicação parcial de funções
 
-Este termo refere-se ao ato de vincular argumentos a uma função para que em suas próximas aplicações um ou mais argumentos sejam omitidos. Ou seja, tais argumentos ainda serão passados para a função parcial, mas não de forma direta ao aplicá-la. Para isso, cria-se uma _closure_ cujo escopo léxico contenha os argumentos que serão vinculados à função parcial. Aqui está um exemplo de como isso pode ser feito usando a função `soma` declarada mais acima:
+Este termo refere-se ao ato de vincular argumentos a uma função para que em suas próximas aplicações um ou mais argumentos sejam omitidos. Ou seja, tais argumentos ainda serão passados para a função parcial, mas não de forma direta ao aplicá-la. Para isso, cria-se uma _closure_ cujo escopo léxico contém os argumentos que serão vinculados à função parcial. Aqui está um exemplo de como isso pode ser feito usando a função `soma` declarada mais acima:
 
 ```
 function criaFuncaoParcial(fn, ...argsExternos) {
@@ -73,12 +73,13 @@ const obj = { j: 5 };
 const boundIncrementaJ = incrementaJ.bind(obj);
 
 boundIncrementaJ();     // 6
+boundIncrementaJ();     // 7
 
 ({
-    j: 50,
+    j: 50,              // Note: neste objeto, `j` é 50
     boundIncrementaJ
 })
-.boundIncrementaJ();    // 7: boundIncrementaJ está vinculada ao
+.boundIncrementaJ();    // 8: boundIncrementaJ está vinculada ao
                         // objeto passado na invocação de bind
 ```
 
