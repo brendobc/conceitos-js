@@ -1,6 +1,7 @@
 /**
- * A `exercicioUm` receberá um caractere e deverá retornar uma função que recebe uma string
- * como parâmetro. O retorno dessa segunda função deve ser a mesma string, porém substitua todos os seus espaços pelo caractere previamente recebido.
+ * Dada uma função `exercicioUm` que recebe um caractere como parâmetro, ela deverá retornar uma
+ * função que recebe uma string como parâmetro por sua vez. O retorno dessa segunda função deve
+ * ser a mesma string, porém todos os espaços presentes devem ser substituídos pelo caractere previamente recebido
  * 
  * @param {String} caractere caractere ou texto
  * @returns {Function} função que substitui os espaços em `string` por `caractere`

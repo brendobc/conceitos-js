@@ -112,9 +112,9 @@ somaOitentaECinco(115, 100);    // 300
 
 ## A prática leva à perfeição
 
-1. Dada uma função `exercicioUm` que recebe um caractere como parâmetro, ela deverá retornar uma função que recebe uma string como parâmetro por sua vez. O retorno dessa segunda função deve ser a mesma string, porém todos os espaços presentes devem ser substituídos pelo caractere previamente recebido. [Link (linha 8)](./sandbox.js)
+1. Dada uma função `exercicioUm` que recebe um caractere como parâmetro, ela deverá retornar uma função que recebe uma string como parâmetro por sua vez. O retorno dessa segunda função deve ser a mesma string, porém todos os espaços presentes devem ser substituídos pelo caractere previamente recebido. [Link (linha 9)](./sandbox.js)
 
-2. Dada uma função `exercicioDois` cujos parâmetros são uma função `fn` e parâmetros rest `rest`, retorne uma função `fn2` que faça com que `rest` seja aplicado à função `fn` depois dos parâmetros recebidos por `fn2`. [Link (linha 23)](./sandbox.js)
+2. Dada uma função `exercicioDois` cujos parâmetros são uma função `fn` e parâmetros rest `rest`, retorne uma função `fn2` que faça com que `rest` seja aplicado à função `fn` depois dos parâmetros recebidos por `fn2`. [Link (linha 24)](./sandbox.js)
 
 Teste suas respostas inseridas em `sandbox.js` executando o comando `npm test` em `intermediario/curry`
 Valide suas respostas com as respostas presentes em `respostas-exercicios.js`
