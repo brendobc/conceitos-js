@@ -1,12 +1,11 @@
 {
-    "name": "curry",
+    "name": "conceitos-js",
     "version": "1.0.0",
-    "description": "Tecnica de currying",
-    "main": "index.js",
+    "description": "Explicacoes de conceitos de javascript",
     "scripts": {
-        "test": "jest"
+        "test-curry": "jest -- intermediario/curry/curry.test.js"
     },
-    "author": "",
+    "author": "Brendo Cliber",
     "license": "ISC",
     "type": "module",
     "devDependencies": {

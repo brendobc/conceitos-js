@@ -117,5 +117,5 @@ somaOitentaECinco(115, 100);    // 300
 
 2. Dada uma função `exercicioDois` cujos parâmetros são uma função `fn` e parâmetros rest `rest`, retorne uma função `fn2` que faça com que `rest` seja aplicado à função `fn` depois dos parâmetros recebidos por `fn2`. [Link (linha 24)](./sandbox.js)
 
-Teste suas respostas inseridas em `sandbox.js` executando o comando `npm test` em `intermediario/curry`
+Teste suas respostas inseridas em `sandbox.js` executando o comando `npm run test-curry`
 Valide suas respostas com as respostas presentes em `respostas-exercicios.js`

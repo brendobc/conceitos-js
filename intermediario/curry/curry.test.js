@@ -1,4 +1,4 @@
-import exercicios from './respostas-exercicios.js';
+import exercicios from './sandbox.js';
 
 test('Avalia a resposta da proposta de exercício número UM', () => {
     const dado = 'a b c d e';
