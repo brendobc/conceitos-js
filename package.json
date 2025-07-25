@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "description": "Explicacoes de conceitos de javascript",
     "scripts": {
-        "test-curry": "jest -- intermediario/curry/curry.test.js"
+        "test-curry": "jest -- intermediario/curry/curry.test.js",
+        "test-ttl": "jest -- intermediario/tagged-template-literal/tagged-template-literal.test.js"
     },
     "author": "Brendo Cliber",
     "license": "ISC",
